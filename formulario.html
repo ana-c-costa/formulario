@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+
+    <style>
+        .BT1
+        {
+            background-color: blueviolet;
+            width: 100px; /* largura*/
+            height: 70px; /* altura*/
+            font-size: 16px; /* tamanho da letra*/
+            cursor: pointer;
+        }
+        .BT2
+        {
+            background-color: rgb(140, 119, 160);
+            width: 100px; /* largura*/
+            height: 70px; /* altura*/
+            font-size: 16px; /* tamanho da letra*/
+            cursor: pointer;
+        }
+        .BT:hover
+        {
+            background-color: rgb(157, 99, 211);
+            width: 100px; /* largura*/
+            height: 70px; /* altura*/
+            font-size: 16px; /* tamanho da letra*/
+            cursor: pointer;
+        }
+        .comentario
+        {
+            width: 90%;
+            height: 200px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>Dados de picoloe</legend>
+        Selecionar sabor:
+        <select>
+            <option>morango</option>
+            <option>chocolate</option>
+            <option>uva</option>
+            <option>limão</option>
+        </select>
+        <br> <br>
+
+        Escolha um molho especial :
+        <input type="radio" name="molhos">chocolate
+        <input type="radio" name="molhos">morango
+        <input type="radio" name="molhos">baunilha
+        <input type="radio" name="molhos">avelã
+        <br> <br>
+
+        Escolha a cor da embalagem:
+        <input type="checkbox"> rosa 
+        <input type="checkbox"> preto
+        <input type="checkbox"> azul
+        <input type="checkbox"> vermelho
+        <input type="checkbox"> roxo
+        <br> <br>
+        Escolha a cor do palito:
+        <input type="color">
+
+        <fieldset>
+        <legend>Dados de entrega</legend>
+        Endereço:<input type="text">
+        <br> <br>
+        Numero:<input type="text">
+        <br> <br>
+        Cidade:<input type="text">
+        <br><br>
+        Data de etrega:<input type="date">
+        <br><br>
+        Comentario: <br>
+        <textarea class="comentario"></textarea>
+
+        </fieldset>     
+        <button class="BT1"> Enviar</button>
+        <button class="BT2"> Cancelar </button>
+
+</body>
+</html>
